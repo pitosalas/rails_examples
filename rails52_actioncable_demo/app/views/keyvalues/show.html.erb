@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Key:</strong>
+  <%= @keyvalue.key %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @keyvalue.value %>
+</p>
+
+<%= link_to 'Edit', edit_keyvalue_path(@keyvalue) %> |
+<%= link_to 'Back', keyvalues_path %>
