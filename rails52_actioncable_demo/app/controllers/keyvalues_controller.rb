@@ -45,7 +45,9 @@ class KeyvaluesController < ApplicationController
         format.html { redirect_to @keyvalue, notice: 'Keyvalue was successfully updated.' }
         format.json { render :show, status: :ok, location: @keyvalue }
         puts "**** Broadcast key=#{keyvalue_params[:key]} value=#{keyvalue_params[:value]}"
-        UpdateChannel.broadcast_to("UpdateChannel", keyvalue_params[:value])
+        ValueUpdateChannel.broadcast_to "new_value", "x"
+        ActionCable.server.broadcast("new_value", "x")
+
       else
         format.html { render :edit }
         format.json { render json: @keyvalue.errors, status: :unprocessable_entity }
