@@ -44,8 +44,10 @@ class KeyvaluesController < ApplicationController
       if @keyvalue.update(keyvalue_params)
         format.html { redirect_to @keyvalue, notice: 'Keyvalue was successfully updated.' }
         format.json { render :show, status: :ok, location: @keyvalue }
-        puts "****", keyvalue_params[:key], keyvalue_params[:value]
-        UpdateChannel.broadcast_to(keyvalue_params[:key], keyvalue_params[:value])
+        puts "**** Broadcast key=#{keyvalue_params[:key]} value=#{keyvalue_params[:value]}"
+        ValueUpdateChannel.broadcast_to "new_value", "x"
+        ActionCable.server.broadcast("new_value", "x")
+
       else
         format.html { render :edit }
         format.json { render json: @keyvalue.errors, status: :unprocessable_entity }
@@ -64,13 +66,14 @@ class KeyvaluesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_keyvalue
-      @keyvalue = Keyvalue.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def keyvalue_params
-      params.require(:keyvalue).permit(:key, :value)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_keyvalue
+    @keyvalue = Keyvalue.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def keyvalue_params
+    params.require(:keyvalue).permit(:key, :value)
+  end
 end
