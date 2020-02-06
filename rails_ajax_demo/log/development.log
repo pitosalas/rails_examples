@@ -1,0 +1,286 @@
+Started GET "/" for 127.0.0.1 at 2018-11-02 13:09:14 -0400
+Processing by HelpController#show as HTML
+  Rendering help/show.html.erb within layouts/application
+  Rendered help/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 827ms (Views: 632.9ms)
+
+
+Started GET "/showhide" for 127.0.0.1 at 2018-11-02 13:09:20 -0400
+Processing by ShowhideController#show_hide as HTML
+  Rendering showhide/show_hide.html.erb within layouts/application
+  Rendered showhide/show_hide.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 35ms (Views: 29.8ms)
+
+
+Started POST "/do_hide" for 127.0.0.1 at 2018-11-02 13:10:32 -0400
+Processing by ShowhideController#do_hide as JS
+  Rendering showhide/do_hide.js.erb
+  Rendered showhide/do_hide.js.erb (0.5ms)
+Completed 200 OK in 52ms (Views: 26.4ms)
+
+
+Started GET "/do_show" for 127.0.0.1 at 2018-11-02 13:10:35 -0400
+Processing by ShowhideController#do_show as JS
+  Rendering showhide/do_show.js.erb
+  Rendered showhide/do_show.js.erb (0.4ms)
+Completed 200 OK in 38ms (Views: 19.3ms)
+
+
+Started POST "/do_toggle" for 127.0.0.1 at 2018-11-02 13:10:36 -0400
+Processing by ShowhideController#do_toggle as JS
+  Rendering showhide/do_toggle.js.erb
+  Rendered showhide/do_toggle.js.erb (0.3ms)
+Completed 200 OK in 11ms (Views: 6.9ms)
+
+
+Started POST "/do_toggle" for 127.0.0.1 at 2018-11-02 13:10:37 -0400
+Processing by ShowhideController#do_toggle as JS
+  Rendering showhide/do_toggle.js.erb
+  Rendered showhide/do_toggle.js.erb (0.3ms)
+Completed 200 OK in 10ms (Views: 7.0ms)
+
+
+Started POST "/do_toggle" for 127.0.0.1 at 2018-11-02 13:10:38 -0400
+Processing by ShowhideController#do_toggle as JS
+  Rendering showhide/do_toggle.js.erb
+  Rendered showhide/do_toggle.js.erb (0.3ms)
+Completed 200 OK in 9ms (Views: 6.2ms)
+
+
+Started POST "/do_toggle" for 127.0.0.1 at 2018-11-02 13:10:39 -0400
+Processing by ShowhideController#do_toggle as JS
+  Rendering showhide/do_toggle.js.erb
+  Rendered showhide/do_toggle.js.erb (0.3ms)
+Completed 200 OK in 9ms (Views: 6.1ms)
+
+
+Started GET "/showhide" for 127.0.0.1 at 2018-11-02 13:15:13 -0400
+Processing by ShowhideController#show_hide as HTML
+  Rendering showhide/show_hide.html.erb within layouts/application
+  Rendered showhide/show_hide.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 42ms (Views: 40.1ms)
+
+
+Started POST "/do_hide" for 127.0.0.1 at 2018-11-02 13:15:16 -0400
+Processing by ShowhideController#do_hide as JS
+  Rendering showhide/do_hide.js.erb
+  Rendered showhide/do_hide.js.erb (0.6ms)
+Completed 200 OK in 40ms (Views: 21.7ms)
+
+
+Started GET "/showhide" for 127.0.0.1 at 2018-11-02 13:17:02 -0400
+Processing by ShowhideController#show_hide as HTML
+  Rendering showhide/show_hide.html.erb within layouts/application
+  Rendered showhide/show_hide.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 38ms (Views: 35.0ms)
+
+
+Started POST "/do_hide" for 127.0.0.1 at 2018-11-02 13:17:04 -0400
+Processing by ShowhideController#do_hide as JS
+  Rendering showhide/do_hide.js.erb
+  Rendered showhide/do_hide.js.erb (0.8ms)
+Completed 200 OK in 38ms (Views: 20.0ms)
+
+
+Started POST "/do_hide" for 127.0.0.1 at 2018-11-02 13:17:05 -0400
+Processing by ShowhideController#do_hide as JS
+  Rendering showhide/do_hide.js.erb
+  Rendered showhide/do_hide.js.erb (0.9ms)
+Completed 200 OK in 39ms (Views: 22.0ms)
+
+
+Started GET "/do_hide" for 127.0.0.1 at 2018-11-02 13:17:07 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/do_hide"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/showhide" for 127.0.0.1 at 2018-11-02 13:17:25 -0400
+Processing by ShowhideController#show_hide as HTML
+  Rendering showhide/show_hide.html.erb within layouts/application
+  Rendered showhide/show_hide.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 28ms (Views: 25.7ms)
+
+
+Started POST "/do_hide" for 127.0.0.1 at 2018-11-02 13:17:26 -0400
+Processing by ShowhideController#do_hide as JS
+  Rendering showhide/do_hide.js.erb
+  Rendered showhide/do_hide.js.erb (0.4ms)
+Completed 200 OK in 37ms (Views: 20.5ms)
+
+
+Started POST "/do_hide" for 127.0.0.1 at 2018-11-02 13:17:29 -0400
+Processing by ShowhideController#do_hide as JS
+  Rendering showhide/do_hide.js.erb
+  Rendered showhide/do_hide.js.erb (0.4ms)
+Completed 200 OK in 36ms (Views: 19.2ms)
+
+
+Started GET "/showhide" for 127.0.0.1 at 2018-11-02 13:18:08 -0400
+Processing by ShowhideController#show_hide as HTML
+  Rendering showhide/show_hide.html.erb within layouts/application
+  Rendered showhide/show_hide.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 26ms (Views: 23.8ms)
+
+
+Started GET "/showhide" for 127.0.0.1 at 2018-11-02 13:18:23 -0400
+Processing by ShowhideController#show_hide as HTML
+  Rendering showhide/show_hide.html.erb within layouts/application
+  Rendered showhide/show_hide.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 40ms (Views: 37.2ms)
+
+
+Started GET "/do_hide" for 127.0.0.1 at 2018-11-02 13:18:26 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/do_hide"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/showhide" for 127.0.0.1 at 2018-11-02 13:19:20 -0400
+Processing by ShowhideController#show_hide as HTML
+  Rendering showhide/show_hide.html.erb within layouts/application
+  Rendered showhide/show_hide.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 25ms (Views: 22.7ms)
+
+
+Started POST "/do_hide" for 127.0.0.1 at 2018-11-02 13:19:22 -0400
+Processing by ShowhideController#do_hide as JS
+  Rendering showhide/do_hide.js.erb
+  Rendered showhide/do_hide.js.erb (0.4ms)
+Completed 200 OK in 36ms (Views: 20.2ms)
+
+
+Started GET "/showhide" for 127.0.0.1 at 2018-11-02 13:19:39 -0400
+Processing by ShowhideController#show_hide as HTML
+  Rendering showhide/show_hide.html.erb within layouts/application
+  Rendered showhide/show_hide.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 27ms (Views: 24.5ms)
+
+
+Started POST "/do_hide" for 127.0.0.1 at 2018-11-02 13:19:44 -0400
+Processing by ShowhideController#do_hide as JS
+  Rendering showhide/do_hide.js.erb
+  Rendered showhide/do_hide.js.erb (0.4ms)
+Completed 200 OK in 39ms (Views: 22.7ms)
+
+
+Started GET "/showhide" for 127.0.0.1 at 2018-11-02 13:20:11 -0400
+Processing by ShowhideController#show_hide as HTML
+  Rendering showhide/show_hide.html.erb within layouts/application
+  Rendered showhide/show_hide.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 24ms (Views: 20.7ms)
+
+
+Started POST "/do_hide" for 127.0.0.1 at 2018-11-02 13:20:13 -0400
+Processing by ShowhideController#do_hide as JS
+  Rendering showhide/do_hide.js.erb
+  Rendered showhide/do_hide.js.erb (0.4ms)
+Completed 200 OK in 37ms (Views: 21.3ms)
+
+
+Started GET "/showhide" for 127.0.0.1 at 2018-11-02 13:20:27 -0400
+Processing by ShowhideController#show_hide as HTML
+  Rendering showhide/show_hide.html.erb within layouts/application
+  Rendered showhide/show_hide.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 25ms (Views: 21.3ms)
+
+
+Started POST "/do_hide" for 127.0.0.1 at 2018-11-02 13:20:30 -0400
+Processing by ShowhideController#do_hide as JS
+  Parameters: {"authenticity_token"=>"7mTk8KlB1rHMnd2Bo97qnX7vg9qfvk0cmhluj30YmiJ5ThFK93Shiq9JVjXLz+sS2V67mfSK1eVNa4kokmojqA=="}
+  Rendering showhide/do_hide.js.erb
+  Rendered showhide/do_hide.js.erb (0.4ms)
+Completed 200 OK in 38ms (Views: 22.6ms)
+
+
+Started GET "/showhide" for 127.0.0.1 at 2018-11-02 13:20:41 -0400
+Processing by ShowhideController#show_hide as HTML
+  Rendering showhide/show_hide.html.erb within layouts/application
+  Rendered showhide/show_hide.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 37ms (Views: 34.9ms)
+
+
+Started POST "/do_hide" for 127.0.0.1 at 2018-11-02 13:20:42 -0400
+Processing by ShowhideController#do_hide as JS
+  Rendering showhide/do_hide.js.erb
+  Rendered showhide/do_hide.js.erb (0.4ms)
+Completed 200 OK in 38ms (Views: 19.6ms)
+
+
+Started GET "/do_show" for 127.0.0.1 at 2018-11-02 13:22:31 -0400
+Processing by ShowhideController#do_show as JS
+  Rendering showhide/do_show.js.erb
+  Rendered showhide/do_show.js.erb (0.3ms)
+Completed 200 OK in 35ms (Views: 18.8ms)
+
+
+Started POST "/do_fadeout" for 127.0.0.1 at 2018-11-02 13:22:37 -0400
+Processing by ShowhideController#do_fadeout as JS
+Completed 200 OK in 1ms (Views: 0.1ms)
+
+
+Started POST "/do_fadein" for 127.0.0.1 at 2018-11-02 13:22:40 -0400
+Processing by ShowhideController#do_fadein as JS
+Completed 200 OK in 1ms (Views: 0.1ms)
+
+
+Started POST "/do_shrink" for 127.0.0.1 at 2018-11-02 13:22:42 -0400
+Processing by ShowhideController#do_shrink as JS
+Completed 200 OK in 1ms (Views: 0.1ms)
+
+
+Started POST "/do_unshrink" for 127.0.0.1 at 2018-11-02 13:22:44 -0400
+Processing by ShowhideController#do_unshrink as JS
+Completed 200 OK in 1ms (Views: 0.1ms)
+
+
