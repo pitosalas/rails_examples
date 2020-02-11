@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @tum.student_id %>
+</p>
+
+<p>
+  <strong>Course:</strong>
+  <%= @tum.course_id %>
+</p>
+
+<%= link_to 'Edit', edit_tum_path(@tum) %> |
+<%= link_to 'Back', ta_path %>
