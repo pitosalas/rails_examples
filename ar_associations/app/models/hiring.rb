@@ -1,4 +1,5 @@
-class Ta < ApplicationRecord
+class Hiring < ApplicationRecord
   belongs_to :student
+  
   belongs_to :course
 end

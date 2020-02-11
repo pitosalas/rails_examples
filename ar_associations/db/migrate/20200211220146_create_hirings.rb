@@ -1,6 +1,6 @@
-class CreateTa < ActiveRecord::Migration[6.0]
+class CreateHirings < ActiveRecord::Migration[6.0]
   def change
-    create_table :ta do |t|
+    create_table :hirings do |t|
       t.references :student, null: false, foreign_key: true
       t.references :course, null: false, foreign_key: true
 

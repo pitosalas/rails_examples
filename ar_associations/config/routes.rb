@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :ta
+  resources :hirings
   resources :registrations
   resources :students
   resources :courses

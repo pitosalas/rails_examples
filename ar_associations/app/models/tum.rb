@@ -1,2 +1,0 @@
-class Tum < ApplicationRecord
-end
