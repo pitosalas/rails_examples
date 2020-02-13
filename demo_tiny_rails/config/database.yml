@@ -83,3 +83,4 @@ production:
   database: demo_tiny_rails_production
   username: demo_tiny_rails
   password: <%= ENV['DEMO_TINY_RAILS_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
